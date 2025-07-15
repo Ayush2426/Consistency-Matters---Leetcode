@@ -5,16 +5,14 @@ public class SquareSortedArray {
         int end = nums.length  -1;
         int newEnd = 0;
         while(start <= end){
-            int Is = nums[start] * nums[start];
-            int Fs = nums[end] * nums[end];
-            if(Is > Fs){
-                ans[newEnd] = Is;
+            if(Math.abs(nums[start]) > Math.abs(nums[end])){
+                ans[newEnd] = nums[start] * nums[start];
                 start++;
-            }else{
-                ans[newEnd] = Fs;
+            } else {
+                ans[newEnd] = nums[end] * nums[end];
                 end--;
             }
-            newEnd--;
+            newEnd++;
         }
         return ans;
     }    
