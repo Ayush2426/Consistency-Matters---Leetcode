@@ -16,7 +16,11 @@ public class LargestNumber {
         for (int i = arr.length - 1; i >= 0; i--) {
             sb.append(arr[i]);
         }
-        return sb.toString();
+        if(sb.charAt(0) == '0'){
+            return "0";
+        }else{
+            return sb.toString();
+        }
     }
     public static void main(String[] args) {
         LargestNumber ln = new LargestNumber();
