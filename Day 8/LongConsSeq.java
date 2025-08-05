@@ -4,7 +4,7 @@ import java.util.HashMap;
 public class LongConsSeq {
     public int consSeqLong(int[]  nums){
         HashMap<Integer, Boolean> map = new HashMap<>();
-        int maxStreak = 0;    
+        int maxStreak = 0;
 
         for(int k : nums){
             map.put(k, false);
