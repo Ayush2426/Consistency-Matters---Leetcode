@@ -5,7 +5,7 @@ public class StringReverse {
         StringBuilder sb = new StringBuilder("");
 
         for (int i = arr.length - 1; i >= 0; i--) {
-            sb.append(arr[i]);
+            sb.append(arr[i] + " ");
         }
         String ans = sb.toString().trim();
         return ans;
