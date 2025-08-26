@@ -19,8 +19,8 @@ public class ValidPalindrome {
         int st = 0, end = sb.length() - 1;
 
         while (st < end) {
-            int lc = sb.charAt(st);
-            int rc = sb.charAt(end);
+            char lc = sb.charAt(st);
+            char rc = sb.charAt(end);
             if (lc != rc) {
                 return false;
             }
