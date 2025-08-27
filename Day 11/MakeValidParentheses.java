@@ -2,7 +2,7 @@
 import java.util.Stack;
 
 public class MakeValidParentheses {
-    public int MakeValidParentheses(String s) {
+    public int makeValidParentheses(String s) {
 
         Stack<Character> st = new Stack<>();
         int count = 0;
@@ -21,6 +21,6 @@ public class MakeValidParentheses {
     }
     public static void main(String[] args) {
         MakeValidParentheses mvp = new MakeValidParentheses();
-        mvp.MakeValidParentheses("(())))");
+        mvp.makeValidParentheses("(())))");
     }
 }
